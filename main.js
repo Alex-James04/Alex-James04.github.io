@@ -1,19 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
     // Dynamic project loading
     const projects = [
-        { title: 'Project 1', description: 'Description of Project 1', image: 'path/to/image1.jpg', link: '#' },
-        { title: 'Project 2', description: 'Description of Project 2', image: 'path/to/image2.jpg', link: '#' },
-        { title: 'Project 3', description: 'Description of Project 3', image: 'path/to/image3.jpg', link: '#' }
+        { title: 'Project 1', description: 'Description of Project 1', image: 'https://via.placeholder.com/300x200.png?text=Project+1' },
+        { title: 'Project 2', description: 'Description of Project 2', image: 'https://via.placeholder.com/300x200.png?text=Project+2' },
+        { title: 'Project 3', description: 'Description of Project 3', image: 'https://via.placeholder.com/300x200.png?text=Project+3' }
     ];
 
     const projectGrid = document.querySelector('.project-grid');
@@ -25,21 +15,27 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="content">
                 <h3>${project.title}</h3>
                 <p>${project.description}</p>
-                <a href="${project.link}" target="_blank">Learn More</a>
             </div>
         `;
         projectGrid.appendChild(projectCard);
     });
 
-    // Form submission handling
-    const contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-        // Here you would typically send the form data to a server
-        console.log('Form submitted:', Object.fromEntries(formData));
-        contactForm.reset();
-        alert('Thank you for your message! I will get back to you soon.');
+    // Dynamic social links loading
+    const socialLinks = [
+        { icon: 'fab fa-github', url: 'https://github.com/yourusername' },
+        { icon: 'fab fa-linkedin', url: 'https://linkedin.com/in/yourusername' },
+        { icon: 'fas fa-envelope', url: 'mailto:your.email@example.com' }
+    ];
+
+    const socialLinksContainer = document.querySelector('.social-links');
+    socialLinks.forEach(link => {
+        const socialLink = document.createElement('a');
+        socialLink.href = link.url;
+        socialLink.target = '_blank';
+        socialLink.rel = 'noopener noreferrer';
+        socialLink.classList.add('social-link');
+        socialLink.innerHTML = `<i class="${link.icon}"></i>`;
+        socialLinksContainer.appendChild(socialLink);
     });
 
     // Intersection Observer for fade-in animations
@@ -56,4 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeInElements.forEach(element => {
         fadeInObserver.observe(element);
     });
+
+    // Dynamic color theme
+    function setRandomTheme() {
+        const hue = Math.floor(Math.random() * 360);
+        document.documentElement.style.setProperty('--primary-color', `hsl(${hue}, 60%, 50%)`);
+        document.documentElement.style.setProperty('--secondary-color', `hsl(${(hue + 180) % 360}, 60%, 50%)`);
+    }
+
+    setRandomTheme();
+    setInterval(setRandomTheme, 10000); // Change theme every 10 seconds
 });
