@@ -52,14 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeInElements.forEach(element => {
         fadeInObserver.observe(element);
     });
-
-    // Dynamic color theme
-    function setRandomTheme() {
-        const hue = Math.floor(Math.random() * 360);
-        document.documentElement.style.setProperty('--primary-color', `hsl(${hue}, 60%, 50%)`);
-        document.documentElement.style.setProperty('--secondary-color', `hsl(${(hue + 180) % 360}, 60%, 50%)`);
-    }
-
-    setRandomTheme();
-    setInterval(setRandomTheme, 10000); // Change theme every 10 seconds
 });
