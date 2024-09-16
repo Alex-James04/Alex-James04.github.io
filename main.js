@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Dynamic social links loading
     const socialLinks = [
-        { icon: 'fab fa-github', url: 'https://github.com/yourusername' },
+        { icon: 'fab fa-github', url: 'https://github.com/Alex-James04' },
         { icon: 'fab fa-linkedin', url: 'https://linkedin.com/in/yourusername' },
-        { icon: 'fas fa-envelope', url: 'mailto:your.email@example.com' }
+        { icon: 'fas fa-envelope', url: 'mailto:your.Ajames04321@gmail.com' }
     ];
 
     const socialLinksContainer = document.querySelector('.social-links');
