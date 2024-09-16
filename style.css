@@ -1,6 +1,11 @@
 h1{
     text-align: center;
 }
+
+body{
+    background-color: lavender;
+}
+
 p{
     text-align: center;
 }
