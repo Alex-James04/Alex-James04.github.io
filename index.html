@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Computer Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <head>
-        <link rel="stylesheet" href="style.css">
+    <main>
+        <section id="hero">
+            <h1>Your Name</h1>
+            <p>Computer Science Student & Developer</p>
+        </section>
 
-        <title>Alex James Homepage</title>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Your brief introduction goes here.</p>
+        </section>
 
-    </head>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <!-- Project cards will be dynamically added here -->
+            </div>
+        </section>
 
-    <body>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-        <h1>Alex James Project Homepage</h1>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 
-        <p>
-            My name is Alex James and I am a Computer Science and Statistics student at The University of Virginia - this is my projects homepage
-        </p>
-
-        <script src="main.js"></script>
-    </body>
-
+    <script src="script.js"></script>
+</body>
 </html>
