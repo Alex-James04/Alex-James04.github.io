@@ -1,7 +1,7 @@
 :root {
     --primary-color: #003876;
     --secondary-color: #ffce00;
-    --text-color: #2D3748;
+    --text-color: #4f5155;
     --background-color: #F0F4F8;
     --card-background: #FFFFFF;
 }
@@ -48,6 +48,7 @@ h1, h2 {
 }
 
 #hero h1 {
+    color: var(--primary-color);
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
