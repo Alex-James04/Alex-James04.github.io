@@ -48,6 +48,7 @@ h1, h2 {
 }
 
 #hero h1 {
+    color: #FFFFFF;
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
