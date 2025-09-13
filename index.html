@@ -3,41 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex James Homepage</title>
+    <title>Alex James</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#frontpage">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
     <main>
-        <section id="hero">
-            <h1>Alex James</h1>
-            <p>Computer Science and Statistics Student</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm Alex James.</p>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects (Coming Soon)</h2>
-            <div class="project-grid">
-                <!-- Project cards will be dynamically added here -->
+        <!-- Frontpage Section -->
+        <section id="frontpage" class="section frontpage">
+            <div class="container">
+                <div class="content-placeholder">
+                    <h1>Alex James</h1>
+                    <p>Computer Science and Statistics Student at the University of Virginia</p>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="social-links">
-                <!-- Social media links will be dynamically added here -->
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="content-placeholder">
+                        <h2>About Me</h2>
+                        <p>About me coming soon...</p>
+                    </div>
+                    <div class="headshot-container">
+                        <img src="images/headshot.JPG" alt="Alex James Headshot" class="headshot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume">
+            <div class="container">
+                <div class="content-placeholder">
+                    <h2>Resume</h2>
+                    <p>Resume coming soon...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="content-placeholder">
+                    <h2>Projects</h2>
+                    <p>Projects me coming soon...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="content-placeholder">
+                    <h2>Contact</h2>
+                    <div class="social-links">
+                        <a href="mailto:ajames04321@email.com" class="social-link">
+                            <div class="social-icon">📧</div>
+                            <span class="social-text">Email</span>
+                        </a>
+                        <a href="https://linkedin.com/in/alexjames" class="social-link" target="_blank">
+                            <div class="social-icon">💼</div>
+                            <span class="social-text">LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/Alex-James04" class="social-link" target="_blank">
+                            <div class="social-icon">🔗</div>
+                            <span class="social-text">GitHub</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Alex James. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Alex James. All rights reserved.</p>
+            <p>Created via Claude Sonnet 4</p>
+        </div>
     </footer>
-
-    <script src="main.js"></script>
 </body>
 </html>
