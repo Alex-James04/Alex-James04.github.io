@@ -118,6 +118,17 @@ body {
 }
 
 /* About Section - Light Gray */
+.about-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 .about {
     background: linear-gradient(135deg, #ececec 0%, #e0e0e0 100%);
 }
@@ -138,8 +149,8 @@ body {
 
 .headshot-container {
     flex-shrink: 0;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
