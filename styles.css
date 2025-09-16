@@ -110,7 +110,7 @@ body {
 
 /* Frontpage Section - Background Image */
 .frontpage {
-    background-image: url('images/Background 2.jpeg');
+    background-image: url('images/background.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -166,6 +166,127 @@ body {
 /* Projects Section - Light Gray */
 .projects {
     background: linear-gradient(135deg, #ececec 0%, #e0e0e0 100%);
+}
+
+/* Projects Section Styles */
+.projects-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project-image {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-title {
+    color: #007bff;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* Responsive Design for Projects */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    
+    .project-card {
+        padding: 25px 20px;
+    }
+    
+    .project-image {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-card {
+        padding: 20px 15px;
+    }
+    
+    .project-image {
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
 }
 
 /* Contact Section - Medium Light Gray */
